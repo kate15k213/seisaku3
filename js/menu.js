@@ -1,20 +1,13 @@
 $(function() {
-  // 変数にクラスを入れる
-  var btn = $('.menu');
-
+  // 要素を取得
+  var element = document.querySelector('.menu');
   //スクロールしてページトップから100に達したらボタンを表示
   $(window).on('load scroll', function(){
     if($(this).scrollTop() > 900) {
-      btn.addClass('menuactive');
+      element.style.display='block';
     }else{
-      btn.removeClass('menuactive');
+      element.style.display='none';
     }
   });
 
-  //スクロールしてトップへ戻る
-  btn.on('click',function () {
-    $('body,html').animate({
-      scrollTop: 0
-    });
-  });
 });

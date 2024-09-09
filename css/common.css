@@ -52,19 +52,16 @@ img{
   width: 100%;
   height: 100px;
   z-index: 10;
-  opacity: 0;
+  /* opacity: 0; */
+  display: none;
 }
-.menuactive{
-  opacity: 1;
-  visibility: visible;
-}
+
 .sitemenuabottona{
   color:#000000;
 }
 .sitemenuabottona:hover{
   opacity: 0.5;
 }
-
 
 .home{
   background-image: url('../images/common/download.jpg');
