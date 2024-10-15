@@ -62,7 +62,9 @@ main p{
   border-style: solid;
   border-color: #ffffff;
 }
-
+.mainabottonp:hover::before{
+  content:url('../images/common/download-4.svg');
+}
 .mainabottonp::before{
   position: absolute;
   top: 25;
@@ -107,6 +109,8 @@ main p{
 }
 .mainbimg{
   background-image: url("../images/common/download-4.jpg");
+  background-position: center;
+  background-size: cover;
   opacity: 0.95;
   height: 900px;
   width: 100%;
@@ -143,6 +147,9 @@ main p{
   color:#000000;
   line-height: 30px;
   font-size: 18px;
+  max-width: 860px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .mainbitem{
   margin-top: 60px;
@@ -225,4 +232,91 @@ main p{
   content:url('../images/common/download-13.svg');
   width: 50px;
   margin-bottom: 25px;
+}
+@media(max-width:1200px){
+  .mainbitem{
+    /* display: block; */
+    width: 90%;
+    /* height: 250px; */
+  }
+  .mainbitema{
+    height: 330px;
+  }
+  .mainbitemb{
+    height: 330px;
+  }
+  .mainbitemc{
+    height: 330px;
+  }
+}
+@media (max-width: 750px) {
+  .maina{
+    margin-top:0px;
+    display: block;
+    height: auto;
+  }
+  .mainaimg{
+    width: 100%;
+    height: 300px;
+    background-size: 100%;
+  }
+  .mainapa{
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  .mainabottonp{
+    margin-top: 20px;
+    font-size: 16px;
+    height: 45px;
+    width: 288px;
+  }
+  .mainabottonp::before{
+    position: absolute;
+    top: 20;
+    left: 60;
+    display: block;
+    content:url('../images/common/download-10.svg');
+    width: 10px;
+    height: 20px;
+  }
+  .mainbpa{
+    font-size: 25px;
+  }
+  .mainaimgb{
+    width: 100%;
+    height: 300px;
+    background-size: 100%;
+  }
+  .mainbitem{
+    display: block;
+    /* width: auto; */
+  }
+  .mainbimg{
+    height: 1400px;
+  }
+  .mainbitema{
+    width: 100%;
+    height: 300px;
+  }
+  .mainbitemb{
+    width: 100%;
+    height: 300px;
+  }
+  .mainbitemc{
+    width: 100%;
+    height: 300px;
+  }
+  .mainbitemaimg{
+    width: 50px;
+  }
+  .mainbitembimg{
+    width: 50px;
+  }
+  .mainbitemcimg{
+    width: 50px;
+  }
+  .mainbbottonp{
+    margin-top: 20px;
+  }
+
 }
